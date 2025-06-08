@@ -32,7 +32,7 @@ Cypress.Commands.add('SentRequest', (endpoint, method, body) => {
     method: method,
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'pk_188600779_71MAGF149IE3VEDX0R3DF4YLRH30PEAN'
+      'Authorization': 'pk_200594385_1D9CCHXB7IZGL6AAZU9OGEMMRQ3NUYGB'
     },
     failOnStatusCode: false,
     body: body
@@ -40,7 +40,7 @@ Cypress.Commands.add('SentRequest', (endpoint, method, body) => {
 })
 
 Cypress.Commands.add('CreateGoal', () => {
-  cy.SentRequest('team/90151117657/goal', 'POST', {"name": faker.internet.email()})
+  cy.SentRequest('team/90151259069/goal', 'POST', {"name": faker.internet.email()})
 })
 
 Cypress.Commands.add('DeleteGoal', (url) => {

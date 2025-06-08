@@ -16,7 +16,7 @@ describe('Test Goals on ClickUP', () => {
     cy.get('@goalId1').then((id1) => {
       cy.get('@goalId2').then((id2) => {
         // Get goals and validate
-        cy.SentRequest('team/90151117657/goal', 'GET').then((res) => {
+        cy.SentRequest('team/90151259069/goal', 'GET').then((res) => {
           expect(res.status).to.eq(200);
           expect(res.body.goals[0].id).to.eq(id1);
           expect(res.body.goals[1].id).to.eq(id2);
